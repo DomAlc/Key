@@ -18,7 +18,7 @@ Key::Key(int pin, bool setPullUp) {
       keyNE = false;
 }
 
-Key::update() {
+void Key::update() {
       if ((!digitalRead(pinNumber) != keyState) && !keySwitch) {
         timeStamp = millis();
         keySwitch = true;

@@ -30,7 +30,7 @@ class Key {
     Key(int pin, bool setPullUp);
 
     /* update must be called every loop */
-    update();
+    void update();
 
     /* return key state: true = key pressed */
     bool getState();
